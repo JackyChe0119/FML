@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PaySelectTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招商银行 (2908）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49D-2g-ifr">
+                        <rect key="frame" x="16" y="18" width="131" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3c-FZ-ZIY">
+                        <rect key="frame" x="281" y="21.5" width="19" height="13"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="O3c-FZ-ZIY" secondAttribute="trailing" constant="20" id="3Jz-mR-2Rx"/>
+                    <constraint firstItem="49D-2g-ifr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8T4-s4-bvc"/>
+                    <constraint firstItem="O3c-FZ-ZIY" firstAttribute="centerY" secondItem="49D-2g-ifr" secondAttribute="centerY" id="uMG-NK-aAd"/>
+                    <constraint firstAttribute="trailing" secondItem="O3c-FZ-ZIY" secondAttribute="trailing" constant="20" id="xhn-cW-N6X"/>
+                    <constraint firstItem="49D-2g-ifr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y7n-da-oYD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="_checkIV" destination="O3c-FZ-ZIY" id="p6d-rk-oFM"/>
+                <outlet property="_name" destination="49D-2g-ifr" id="ZWv-c9-hBw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked.png" width="19" height="13"/>
+    </resources>
+</document>

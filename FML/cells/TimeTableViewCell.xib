@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4400" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TimeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_time.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Wt-u8-z09">
+                        <rect key="frame" x="16" y="20" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="8Fh-hG-V0G"/>
+                            <constraint firstAttribute="width" constant="16" id="Qca-Jd-7HA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ky-FQ-HCm">
+                        <rect key="frame" x="43" y="18.5" width="36.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqs-5d-yTj">
+                        <rect key="frame" x="272.5" y="17.5" width="32.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="释放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-5S-Bc1">
+                        <rect key="frame" x="233.5" y="19.5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qJu-5S-Bc1" firstAttribute="centerY" secondItem="zqs-5d-yTj" secondAttribute="centerY" id="2hK-M1-lVY"/>
+                    <constraint firstItem="2Wt-u8-z09" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ETR-Hw-HlJ"/>
+                    <constraint firstItem="3Ky-FQ-HCm" firstAttribute="leading" secondItem="2Wt-u8-z09" secondAttribute="trailing" constant="11" id="Enl-ek-8Sf"/>
+                    <constraint firstItem="3Ky-FQ-HCm" firstAttribute="centerY" secondItem="2Wt-u8-z09" secondAttribute="centerY" id="IhA-d4-svS"/>
+                    <constraint firstItem="2Wt-u8-z09" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Txk-Ll-pX2"/>
+                    <constraint firstItem="zqs-5d-yTj" firstAttribute="leading" secondItem="qJu-5S-Bc1" secondAttribute="trailing" constant="10" id="gKl-xz-fgv"/>
+                    <constraint firstItem="zqs-5d-yTj" firstAttribute="centerY" secondItem="2Wt-u8-z09" secondAttribute="centerY" id="hKO-OF-1ZQ"/>
+                    <constraint firstAttribute="trailing" secondItem="zqs-5d-yTj" secondAttribute="trailing" constant="15" id="w31-Mn-ZX6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="_label" destination="qJu-5S-Bc1" id="hQj-6J-9ek"/>
+                <outlet property="_numLB" destination="zqs-5d-yTj" id="nRX-KZ-AXY"/>
+                <outlet property="timeLB" destination="3Ky-FQ-HCm" id="c7v-FI-4U4"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="132.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_time.png" width="16" height="16"/>
+    </resources>
+</document>

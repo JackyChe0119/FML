@@ -1,0 +1,68 @@
+//
+//  PrefixHeader.pch
+//  CCube
+//
+//  Created by Robin on 16/8/7.
+//  Copyright © 2016年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define ENV_MODE @"test" //@"production"
+
+//Masonry 相关
+#ifdef __OBJC__
+//define this constant if you want to use Masonry without the 'mas_' prefix
+//#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#define LBXScan_Define_Native  //包含native库
+#define LBXScan_Define_ZXing   //包含ZXing库
+#define LBXScan_Define_ZBar   //包含ZBar库
+#define LBXScan_Define_UI     //包含界面库
+
+#import "UserSingle.h"
+
+//通用定义和常量相关
+#import "CommonMacro.h"
+#import "ColorMacro.h"
+#import "InterfaceMacro.h"
+#import "SafeARC.h"
+#import "CommonConfig.h"
+#import "NotificationMacro.h"
+#import "UserDefaultsMacro.h"
+#import "FunctionHeader.h"
+
+
+
+//工具类相关
+#import "CommonToastHUD.h"
+#import "UserDefaultsMacro.h"
+#import "DateUtil.h"
+
+//经常引用的文件
+#import "AppDelegate.h"
+#import "MJBaseViewController.h"
+#import "MJBaseModel.h"
+#import "RequestEngine.h"
+#import "Masonry.h"
+
+//扩展类
+#import "APPInfoData.h"
+#import "UIColor+Extension.h"
+#import "CAAnimation+KJAnnamation.h"
+#import "UILabel+AutoSize.h"
+#import "UILabel+UILabel_countDown.h"
+#import "UIButton+Create.h"
+#import "UIView+Create.h"
+#import "UIImageView+Create.h"
+#import "UIViewController+NavBarHidden.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+Create.h"
+#import "UIView+NTES.h"
+#import "NSString+Category.h"
+#endif
+
+#endif /* PrefixHeader_pch */
